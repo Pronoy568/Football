@@ -1,0 +1,21 @@
+.midPart{
+    display:flex;
+    background-color: greenyellow;
+    margin:30px;
+    padding:10px;
+}
+.lastPart{
+    color:rgb(48, 148, 164);
+}
+.img{
+    height:400px;
+    width:350px;
+    border-radius: 10px;
+    margin:2px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    padding: 5px;
+}
