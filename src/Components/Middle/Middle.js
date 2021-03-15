@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Leagues from '../Leagues/Leagues';
+import './Middle.css';
 
 const Middle = () => {
     const [team , setTeam] = useState([]);
@@ -12,14 +13,14 @@ const Middle = () => {
     },[])
     const team15 = team.slice(0,15);
 
-    const midStyle ={
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3,490px)',
-        gridGap:'10px',
-        backgroundColor: 'green',
-      }
+    // const midStyle ={
+    //     display: 'grid',
+    //     gridTemplateColumns: 'repeat(3,490px)',
+    //     gridGap:'10px',
+    //     backgroundColor: 'green',
+    //   }
     return (
-        <div style={midStyle}>
+        <div className="midStyle" >
          {
              team15.map(leagues =><Leagues leagues={leagues}></Leagues>)
          }
